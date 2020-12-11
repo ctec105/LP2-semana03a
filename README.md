@@ -1,7 +1,7 @@
-# LP2-semana03a: JSTL
+# LP2-semana03a: EL (param, requestScope y sessionScope)
 
-En esta demo aprenderemos a utilizar dentro de un JSP la tecnología de lenguaje de expresión (EL - Expression Languaje) JSTL (JavaServer Pages Standard Tag Library)
-Aplicaremos al proyecto anterior "LP2-semana02b" JSTL para referenciar a los parámetros que llegan del request y a los atributos que han sido cargados al request y a la sesión mediante los objetos param, requestScope y sessionScope.
+En esta demo aprenderemos a utilizar dentro de un JSP la tecnología de lenguaje de expresión (EL - Expression Languaje).
+Aplicaremos al proyecto anterior "LP2-semana02b" EL para referenciar a los parámetros que llegan del request y a los atributos que han sido cargados al request y a la sesión mediante los objetos param, requestScope y sessionScope.
 
 ![](https://raw.githubusercontent.com/ctec105/LP2-semana03a/master/image.png)
 
