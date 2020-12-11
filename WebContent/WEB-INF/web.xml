@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>LP2-semana02a</display-name>
+  
+  <!-- Definimos cual es nuestra pagina de bienvenida tenemos varias candidatas -->
+  <welcome-file-list>
+    <welcome-file>logueo.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- Registrar nuestro segundo Servlet - LogueoServlet -->
+  <servlet>
+    <description></description>
+    <display-name>LogueoServlet</display-name>
+    <servlet-name>LogueoServlet</servlet-name>
+    <servlet-class>sisepuede.LogueoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogueoServlet</servlet-name>
+    <url-pattern>/salimostemprano</url-pattern>
+  </servlet-mapping>
+  
+  <!-- DEFINIMOS EL TIEMPO DE INACTIVIDAD DE LA SESION (1 minuto luego refrescamos la pag) -->
+  <session-config>
+  	<session-timeout>1</session-timeout>
+  </session-config>
+  
+  
+</web-app>
